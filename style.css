@@ -1,0 +1,298 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: verdana;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigasi {
+    background-color: rgb(255, 255, 255);
+    width: 150%;
+    height: 50px;
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.menu {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: pink;
+    font-style: italic;
+}
+
+.menu ul i:hover {
+    color: pink;
+    font-style: italic;
+}
+
+.sampul {
+    background-color: rgb(219, 91, 134);
+    height: 700px;
+    text-align: center;
+    color: white;
+}
+
+.sampul img {
+    border-radius: 100px;
+    height: 200px;
+    border: 6px solid pink;
+    margin-top: 100px;
+}
+
+.sampul h1 {
+    margin-top: 10px;
+}
+
+.sampul button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.sampul button:hover {
+    background-color: rgb(219, 91, 134);
+    border: 1px solid white;
+    color: white;
+}
+
+
+
+
+
+.produk .heading {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 16px;
+    margin: 32px 0;
+    background: palevioletred;
+}
+
+.produk .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+
+}
+
+.produk .box-container .box {
+    flex: 1 1 240px;
+    box-shadow: 0 .80px 25px palevioletred;
+    border-radius: .80px;
+    border: .16px solid palevioletred;
+    position: relative;
+}
+
+.produk .box-container .box .image {
+    position: relative;
+    text-align: center;
+    padding-top: 32px;
+    overflow: hidden;
+}
+
+.produk .box-container .box .image img {
+    height: 240px;
+
+}
+
+.produk .box-container .box:hover .image img {
+    transform: scale(1.1);
+}
+
+.produk .box-container .box .image .ikon {
+    position: absolute;
+    bottom: -112px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+.produk .box-container .box:hover .image .ikon {
+    bottom: 0px;
+}
+
+.produk .box-container .box .image .ikon a {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    width: 50%;
+    background: rgb(219, 91, 134);
+    color: #fff;
+}
+
+.produk .box-container .box .image .ikon .cart btn {
+    border-left: .16px solid white;
+    border-right: .16px solid white;
+    width: 100%;
+}
+
+.produk .box-container .box .image .ikon a:hover {
+    background: pink;
+}
+
+.produk .box-container .box .content {
+    padding: 32px;
+    text-align: center;
+}
+
+.produk .box-container .box .content h3 {
+    font-size: 32px;
+    color: palevioletred;
+}
+
+.produk .box-container .box .content .price {
+    font-size: 32px;
+    color: rgb(219, 91, 134);
+    font-weight: bolder;
+    padding-top: 16px;
+}
+
+
+
+.review .heading {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    padding: 16px;
+    margin: 32px 0;
+    background: palevioletred;
+}
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.review .box-container .box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem palevioletred;
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.review .box-container .box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 4rem;
+    color: #eee;
+}
+
+.review .box-container .box .starts i {
+    color: red;
+    font-size: 2rem;
+}
+
+.review .box-container .box p {
+    color: rgb(128, 128, 128);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.review .box-container .box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.review .box-container .box .user h3 {
+    font-size: 2rem;
+    color: palevioletred;
+}
+
+.review .box-container .box .user span {
+    font-size: 1.5rem;
+    color: rgb(219, 91, 134);
+}
+
+
+
+.kontak {
+    text-align: center;
+    color: palevioletred;
+}
+
+.kontak .heading {
+    font-size: 25px;
+    color: white;
+    padding: 16px;
+    margin: 32px 0;
+    background: palevioletred;
+}
+
+.kontak img {
+    width: 400px;
+}
+
+.kontak .phone-number {
+    margin-bottom: 20px;
+}
+
+
+
+.footer .heading {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    margin: 0px 0;
+    background: palevioletred;
+}
+
+.footer {
+    padding-top: 0px;
+}
+
+.icon-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}

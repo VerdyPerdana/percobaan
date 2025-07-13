@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS UAS FAURA</title>
+    <link rel="stylesheet" type="text/css " href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px;
+        }
+
+        .navigasi {
+            position: fixed;
+            width: 100%;
+            background: white;
+            z-index: 1000;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin: 0 15px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: rgb(219, 91, 134);
+            font-weight: bold;
+        }
+
+        .menu ul li a:hover {
+            color: #f80505;
+        }
+
+        .sampul,
+        .produk,
+        .review,
+        .kontak {
+            padding-top: 80px;
+            margin: 20px 0;
+            flex: 1;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0; 
+            width: 100%; 
+            text-align: center;
+            background: palevioletred;
+            padding: 5px 0;
+            color: white;
+            z-index: 1000;
+        }
+
+        .produk {
+            padding-top: 20px;
+            margin: 20px 0;
+        }
+
+        .heading {
+            margin-top: 10px;
+        }
+
+        .sampul {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(219, 91, 134);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sampul h1 {
+            margin: 20px 0;
+        }
+
+        .sampul img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sampul button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #fff;
+            color: #e91e63;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .sampul button:hover {
+            background-color: #e91e63;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--beranda awal-->
+    <div class="navigasi" id="Beranda">
+        <div class="logo">
+            <h2 style="color: #e91e63;">WARUNG FM</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#Menu Kami">Menu Kami</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sampul">
+        <img src="logo warung.jpg">
+        <h1>Halo, Selamat Datang Diwarung Saya</h1>
+
+        <a href=""><button>Selengkapnya</button></a>
+    </div>
+    </div>
+    <!--beranda akhir-->
+
+
+    <!--menu kami awal-->
+    <div class="produk" id="Menu Kami">
+
+        <h1 class="heading">Menu <span>Warung Kami</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="nasi campur.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nasi Campur</h3>
+                    <div class="price"> RP.12.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="nasi goreng biasa.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nasi Goreng Biasa</h3>
+                    <div class="price"> RP.15.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="nasi goreng seafood.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Nasi Goreng Seafood</h3>
+                    <div class="price"> RP.20.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="mie goreng.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Mie Goreng</h3>
+                    <div class="price"> RP.17.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="soto ayam.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Soto Ayam</h3>
+                    <div class="price"> RP.20.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="sate ayam.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Sate Ayam</h3>
+                    <div class="price"> RP.20.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="ayam bakar.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ayam Bakar</h3>
+                    <div class="price"> RP.25.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="ikan.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ikan Bakar</h3>
+                    <div class="price"> RP.35.000</div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="image">
+                    <img src="kentang goreng.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Kentang Goreng</h3>
+                    <div class="price"> RP.17.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="es campur.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Es Campur</h3>
+                    <div class="price"> RP.15.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="air mineral.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Air Mineral</h3>
+                    <div class="price"> RP.5.000</div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="es jeruk.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Es Jeruk</h3>
+                    <div class="price"> RP.5.000</div>
+                </div>
+            </div>
+
+            <!-- <div class="box">
+                <div class="image">
+                    <img src="es teh.jpg" alt="">
+                    <div class="ikon">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Es Teh</h3>
+                    <div class="price"> RP.5.000</div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+    <!--menu kami akhir-->
+
+
+
+
+    <!--review awal-->
+    <div class="review" id="Review">
+
+        <h1 class="heading"> customer's <span>review</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>makanannya enak banget dan pelayananya cukup ramah, harganya juga ramah dikantong pokoknya wajib
+                    cobain deh</p>
+                <div class="user">
+                    <img src="review 1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Stevina</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fa-solid fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>enak banget sih, sampai gabisa berkata-kata</p>
+                <div class="user">
+                    <img src="review 2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>jessica</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fa-solid fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>makananya enak pelayanan juga ramah</p>
+                <div class="user">
+                    <img src="review 3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>khalid</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fa-solid fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>es campurnya mantap banget</p>
+                <div class="user">
+                    <img src="review 4.jpg" alt="">
+                    <div class="user-info">
+                        <h3>clark</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fa-solid fa-quote-right"></span>
+            </div>
+
+        </div>
+    </div>
+    <!--review akhir-->
+
+
+    <div class="kontak" id="Kontak">
+
+        <h1 class="heading"> hubungi <span>kontak kami</span> </h1>
+        <img src="kontak.jpg" alt="">
+        <h2>081234567891</h2>
+
+    </div>
+
+
+    <!--footer awal-->
+    <div class="footer">
+        <h1 class="heading"> copyright : <span>faura mardian |NIM c789202301.087</h1>
+</body>
+
+</html>
